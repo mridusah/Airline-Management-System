@@ -1,0 +1,16 @@
+-- View 1:
+
+CREATE VIEW `get_all_airlines` AS SELECT * FROM `airlines`;
+SHOW CREATE VIEW `get_all_airlines`;
+SELECT * FROM get_all_airlines;
+
+
+-- View 2:
+CREATE VIEW `get_all_airlines_route` AS
+SELECT *
+FROM airlines
+LEFT JOIN route ON airlines.airlines_id = route.route_airlines_id;
+
+-- View 3:
+CREATE VIEW `get_all_airlines_bookings` AS
+SELECT * FROM `airlines`,`booking`,`route` WHERE route_id = booking_route_id AND route_airlines_id = airlines_id AND airlines_id = id;
