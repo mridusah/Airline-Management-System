@@ -1,0 +1,5 @@
+insert into customer values('C001', 'mridusah', 'mridu20', 'Mridu', '', 'Sah', 'mridusah20@gmail.com', 9528802414, 'Estancia', 974738254686, 'Adjhe32746');
+insert into ticket_status values('T1', 'gdyg36', 'on-time');
+insert into flight values(435378, 'chennai', '5:00 PM', 'delhi', '8:00 PM', 'economy', '2000km', 'A2', '5000 Rs', 'continuous', '0', 'student');
+insert into administrator values('A01', 'admin1', 'admin@001');
+insert into airline values('indigo', 'none');
