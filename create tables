@@ -1,0 +1,66 @@
+--
+--Table structure for customer
+--
+
+CREATE TABLE `customer` (
+"customer"
+  `username` varchar(100) NOT NULL,
+  `passw` varchar(25) NOT NULL,"customer"
+  `first_name` varchar(255) NOT NULL,
+  `middle_name` varchar(255),
+  `last_name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `ph_no` int(11) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `aadhar_no` int(12) NOT NULL,
+  `vaccination_cert` varchar(100) NOT NULL
+);
+
+--
+-- Table structure for table `ticket_status`
+--
+
+CREATE TABLE `ticket_status` (
+  `terminal` varchar(10) NOT NULL,
+  `id_no` varchar(100) NOT NULL,
+  `status` varchar(100) NOT NULL,
+);
+
+
+--
+-- Table structure for table `flight`
+--
+
+CREATE TABLE `flight` (
+  `flight_no` int(50) NOT NULL,
+  `departure` varchar(100) NOT NULL,
+  `depart_time` varchar(50) NOT NULL,
+  `destination` varchar(100) NOT NULL,
+  `arrival_time` varchar(50) NOT NULL,
+  `class_type` varchar(50) NOT NULL,
+  `distance` varchar(100) NOT NULL,
+  `seat` varchar(10) NOT NULL,
+  `price` varchar(150) NOT NULL,
+  `stops` varchar(200) NOT NULL,
+  `discount` varchar(100) NOT NULL,
+  `customer_quota` varchar(150) NOT NULL,
+);
+
+--
+-- Table structure for table `administrator`
+--
+
+CREATE TABLE `administrator` (
+  `admin_id` varchar(50) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `passw` varchar(50) NOT NULL
+);
+
+--
+-- Table structure for table `airline`
+--
+
+CREATE TABLE `airline` (
+  `airline_name` varchar(100) NOT NULL,
+  `airline_mergers` varchar(200) NOT NULL
+);
