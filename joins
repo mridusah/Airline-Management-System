@@ -1,0 +1,25 @@
+-- Inner Join Example:
+
+SELECT *
+FROM airlines
+INNER JOIN route ON airlines.airlines_id = route.route_airlines_id;
+
+-- Left Join Example:
+SELECT *
+FROM airlines
+LEFT JOIN route ON airlines.airlines_id = route.route_airlines_id;
+
+-- Right Join Example:
+SELECT *
+FROM airlines
+RIGHT JOIN route ON airlines.airlines_id = route.route_airlines_id;
+
+-- Cross Join Example:
+SELECT *
+FROM airlines
+FULL JOIN route ON airlines.airlines_id = route.route_airlines_id;
+
+-- FUll Join Example:
+SELECT *
+FROM airlines
+FULL JOIN route ON airlines_id = route_airlines_id;
