@@ -1,0 +1,1 @@
+SELECT * FROM `airlines` WHERE airlines_id IN (SELECT route_airlines_id FROM route)
